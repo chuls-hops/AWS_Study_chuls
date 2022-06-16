@@ -1,2 +1,2 @@
 # AWS_Basic
-AWS Study 
+AWS 공부용, 메모용
