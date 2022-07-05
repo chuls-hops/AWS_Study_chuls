@@ -1,52 +1,52 @@
 ### MS라이선스 관련
 #### MS라이선스의 경우 EA용 라이선스일 경우에 BYOL로 확용이 가능하나 Windows 서버의 경우 Dedicated Host 상품 형태에서만 사용이 가능함. 
-아래 원문 참고
+#### 아래 원문 참고
 
 
 
-AWS에서 Microsoft라이센스 BYOL로 사용하기
+### AWS에서 Microsoft라이센스 BYOL로 사용하기
  
 
-AWS에서 Microsoft 라이센스를 사용하기 위해서는 License Mobility 를 이해하셔야 합니다.
+#### AWS에서 Microsoft 라이센스를 사용하기 위해서는 License Mobility 를 이해하셔야 합니다.
 
  
 
 - License Mobility란?
 
-AWS에서 Microsoft 라이센스 유동적으로 사용할 수 있게 허용해준 정책입니다.
+#### AWS에서 Microsoft 라이센스 유동적으로 사용할 수 있게 허용해준 정책입니다.
 
  
 
 - License Mobility를 적용받아 Microsoft 라이센스를 AWS사용 할 수 있는 대상은?
 
-Microsoft Volume License 보유 고객 중 Microsoft Software Assurance(SA) 계약을 적용 받는 고객입니다.
+#### Microsoft Volume License 보유 고객 중 Microsoft Software Assurance(SA) 계약을 적용 받는 고객입니다.
 
-또한, 유효한 라이센스인지 Software Assurance계약이 포함되어 있는지 Microsoft로 부터 승인을 받아야 합니다. 
+#### 또한, 유효한 라이센스인지 Software Assurance계약이 포함되어 있는지 Microsoft로 부터 승인을 받아야 합니다. 
 
-승인 절차는 다음 URL을 통해서 진행하시면 됩니다.
+#### 승인 절차는 다음 URL을 통해서 진행하시면 됩니다.
 
- https://www.microsoft.com/en-us/licensing/licensing-programs/software-assurance-license-mobility.aspx
+ #### https://www.microsoft.com/en-us/licensing/licensing-programs/software-assurance-license-mobility.aspx
 
  
 
 - Microsoft License는 있는데 꼭 SA계약과 인증이 필요할까요?
 
-결론부터 말씀드리자면 아닙니다.
+#### 결론부터 말씀드리자면 아닙니다.
 
-SA계약과 인증이 없어도 아래와 같은 제약 조건으로  Microsoft License를 BYOL로 사용할 수 있습니다.
+#### SA계약과 인증이 없어도 아래와 같은 제약 조건으로  Microsoft License를 BYOL로 사용할 수 있습니다.
 
-또, SA계약이 있어도 사용할 수 있는 Microsoft 제품에는 종류가 정해져있으니 잘 확인해야합니다.
+#### 또, SA계약이 있어도 사용할 수 있는 Microsoft 제품에는 종류가 정해져있으니 잘 확인해야합니다.
 
  
 
-1) Microsoft License가 있는데, SA(software assurance) 계약이 안되어있는 경우 ( --> Dedicated host 사용)
+### 1) Microsoft License가 있는데, SA(software assurance) 계약이 안되어있는 경우 ( --> Dedicated host 사용)
 
-EC2 생성은 Dedicated host로 사용해야함
-BYOL로 사용하기 위해 AWS vm import로 EC2 생성을 해야 함
-대표적인 MS제품 중 windows server / MS SQL server 둘 다 해당 됨
+#### EC2 생성은 Dedicated host로 사용해야함
+#### BYOL로 사용하기 위해 AWS vm import로 EC2 생성을 해야 함
+#### 대표적인 MS제품 중 windows server / MS SQL server 둘 다 해당 됨
  
 
-  2) Microsoft License는 있는데, SA(software assurance) 계약이 되어 있는 경우 ( --> Default tenancy 사용)
+###  2) Microsoft License는 있는데, SA(software assurance) 계약이 되어 있는 경우 ( --> Default tenancy 사용)
 
 EC2 생성은 일반(Default tenancy)타입으로 사용 가능함
 MS에 양식을 작성하여 AWS License Mobility인증을 받아야함
