@@ -1,5 +1,8 @@
 ### MS라이선스 관련
-#### MS라이선스의 경우 EA용 라이선스일 경우에 BYOL로 확용이 가능하나 Windows 서버의 경우 Dedicated Host 상품 형태에서만 사용이 가능함. 
+- MS라이선스의 경우 EA용 라이선스일 경우에 BYOL로 확용이 가능하나 Windows 서버의 경우 Dedicated Host 상품 형태에서만 사용이 가능함. 
+
+
+
 #### 아래 원문 참고
 
 
