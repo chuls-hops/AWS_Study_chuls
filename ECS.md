@@ -14,3 +14,5 @@
 13. ALB는 보통 public subnet에 구성하면 되고 경로 설정을 해주면 된다. 
 14. ECS클러스터에 작업정의, ALB가 생성 되었다면 이제 서비스를 생성하면 서비스 노출이 된다. 
 15. 서비스 생성시 기존에 만들어둔 작업정의와 ALB를 사용하면된다. 
+16. 온프렘과 연동 및 고정아이피 요건을 위해 Internal NLB를 사용하는데 target group을 ALB로 지정할수 있는데, 이때 internal, internet-facing 타입 ALB모두 설정이 된다. 
+17. EC2를 private 존에 생성하고 해당 private 라우팅 테이블에 외부로 갈수 있는 경로를 삭제 해버렸다. 이때도 internal nlb -> internet-facing ALB로 트래픽 전달이 되는지 확인 하니 페이지가 정상적으로 호출이 되었다.
