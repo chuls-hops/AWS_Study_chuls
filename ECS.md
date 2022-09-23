@@ -1,4 +1,7 @@
 ### ECS관련 정리
+![image](https://user-images.githubusercontent.com/98098974/191977482-8ac44522-02bb-470c-90b9-d57e731edb5e.png)
+- 해당환경에서 ECS를 구성하고 테스트 해보았다. 
+
 1. public subnet, private subnet 각각 2개를 구성 
 2. ECS 클러스터를 Private subnet에 배포
 3. 클러스터를 생성할때 SG가 연결된다. IAM Role도 자동으로 생성이 된다, Cloud Watch logs도 활성화 시킬수 있다. 
